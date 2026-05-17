@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface: #131313;
+  --color-surface-dim: #131313;
+  --color-surface-bright: #3a3939;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c7c9ab;
+  --color-inverse-surface: #e5e2e1;
+  --color-inverse-on-surface: #313030;
+  --color-outline: #919378;
+  --color-outline-variant: #464832;
+  --color-surface-tint: #bed100;
+  --color-primary: #ffffff;
+  --color-on-primary: #2e3300;
+  --color-primary-container: #d9ef00;
+  --color-on-primary-container: #606a00;
+  --color-inverse-primary: #5a6400;
+  --color-secondary: #ecffe3;
+  --color-on-secondary: #003907;
+  --color-secondary-container: #13ff43;
+  --color-on-secondary-container: #007117;
+  --color-tertiary: #ffffff;
+  --color-on-tertiary: #680008;
+  --color-tertiary-container: #ffdad6;
+  --color-on-tertiary-container: #ca081c;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-primary-fixed: #d9ef00;
+  --color-primary-fixed-dim: #bed100;
+  --color-on-primary-fixed: #1a1e00;
+  --color-on-primary-fixed-variant: #434b00;
+  --color-secondary-fixed: #72ff70;
+  --color-secondary-fixed-dim: #00e639;
+  --color-on-secondary-fixed: #002203;
+  --color-on-secondary-fixed-variant: #00530e;
+  --color-tertiary-fixed: #ffdad6;
+  --color-tertiary-fixed-dim: #ffb3ac;
+  --color-on-tertiary-fixed: #410003;
+  --color-on-tertiary-fixed-variant: #930010;
+  --color-background: #131313;
+  --color-on-background: #e5e2e1;
+  --color-surface-variant: #353534;
+
+  --font-bebas: "var(--font-bebas)";
+  --font-jetbrains: "var(--font-jetbrains)";
+
+  --spacing-margin-page: 48px;
+  --spacing-section-gap: 96px;
+  --spacing-col-gap: 24px;
+  --spacing-gutter: 1px;
+  --spacing-base: 4px;
+
+  --radius-none: 0px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-background text-on-background font-jetbrains selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.grain-overlay {
+  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuATRnG8GuzD3GahLYnlX2Eqnfsd7ERjdEa1JHEbiQbySygKWXnIGnmiPDJbEzPd9fRD8iUYFTGBXEwrfxzvFNo9P1v-kyeDeGjpIgIZVI1Tzy785zIycUfpnEIs5hMVAoiFDQTubAXI5IgrJ-4sfMp5J-JoS6-XkQFiiNqa2G6YkcKZeuBcX94ZcIh2kcDfSfXGdWazOKTJzIIl5vg_zifWvP6wTqcX8Q6eTQPb5yVQ_ejuQgpvWX3DSNpo-YXD2kMvplhfkAjK99z4);
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+@layer utilities {
+  .text-display-xl {
+    font-family: var(--font-bebas);
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: -0.02em;
+  }
+  .text-display-lg {
+    font-family: var(--font-bebas);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 0em;
+  }
+  .text-headline-lg {
+    font-family: var(--font-bebas);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+  }
+  .text-headline-md {
+    font-family: var(--font-bebas);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .text-headline-sm {
+    font-family: var(--font-bebas);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .text-body-lg {
+    font-family: var(--font-jetbrains);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .text-body-md {
+    font-family: var(--font-jetbrains);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .text-code-sm {
+    font-family: var(--font-jetbrains);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .text-label-caps {
+    font-family: var(--font-jetbrains);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+  }
+}
+
+@keyframes cyber-pulse {
+  0%, 100% {
+    filter: grayscale(100%) contrast(110%);
+  }
+  50% {
+    filter: grayscale(0%) contrast(100%);
+  }
+}
+
+.cyber-image-effect {
+  animation: cyber-pulse 8s infinite ease-in-out;
 }
