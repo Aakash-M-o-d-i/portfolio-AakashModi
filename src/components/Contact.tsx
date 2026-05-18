@@ -43,7 +43,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-section-gap px-margin-page">
+    <section id="connect" className="py-section-gap px-margin-page">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-col-gap">
         <div>
           <h2 className="text-headline-lg mb-8 uppercase">ESTABLISH_CONTACT</h2>

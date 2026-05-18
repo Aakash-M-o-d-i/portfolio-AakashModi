@@ -10,10 +10,10 @@ export const Navbar = () => {
       <nav className="fixed top-0 w-full z-50 bg-background border-b border-outline-variant flex justify-between items-center px-margin-page py-4">
         <div className="text-headline-sm text-primary-fixed font-bold tracking-tighter cursor-crosshair active:invert">&gt; AAKASH_MODI_</div>
         <div className="hidden md:flex gap-8 items-center">
-          <a className="text-body-md uppercase tracking-widest text-primary-fixed bg-on-primary-fixed-variant px-2 transition-colors duration-75 cursor-crosshair active:invert" href="#">INTEL</a>
-          <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#">PROJECTS</a>
-          <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#">ARCHIVE</a>
-          <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#">CONNECT</a>
+          <a className="text-body-md uppercase tracking-widest text-primary-fixed bg-on-primary-fixed-variant px-2 transition-colors duration-75 cursor-crosshair active:invert" href="#intel">INTEL</a>
+          <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#projects">PROJECTS</a>
+          <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#reports">ARCHIVE</a>
+          <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#connect">CONNECT</a>
         </div>
         <button 
           onClick={() => setShowCV(true)}

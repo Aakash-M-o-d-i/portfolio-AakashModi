@@ -4,7 +4,7 @@ import { TerminalOverlay } from "./TerminalOverlay";
 
 export const Hero = () => {
   return (
-    <header className="min-h-screen flex flex-col md:flex-row pt-16">
+    <header id="intel" className="min-h-screen flex flex-col md:flex-row pt-16">
       {/* Left Panel (Identity) */}
       <div className="w-full md:w-[55vw] flex flex-col justify-center px-margin-page py-section-gap relative">
         <div className="absolute -z-10 top-20 left-10 opacity-[0.04] text-display-xl text-on-surface select-none">01</div>
