@@ -1,10 +1,4 @@
-{"timestamp":"00:00:09.277","source":"Server","level":"WARN","message":"⚠ Slow filesystem detected. The benchmark took 269ms. If /home/ethereal/Documents/portfolio/cyber-portfolio/dist/dev is a network drive, consider moving it to a local folder.\nSee more: https://nextjs.org/docs/app/guides/local-development"}
-{"timestamp":"00:00:09.856","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:09.857","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
-{"timestamp":"00:00:09.859","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
-{"timestamp":"00:00:09.862","source":"Server","level":"LOG","message":"  \t- include was updated to add 'dist/types/**/*.ts'"}
-{"timestamp":"00:00:09.863","source":"Server","level":"LOG","message":"  \t- include was updated to add 'dist/dev/types/**/*.ts'"}
-{"timestamp":"00:00:09.863","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:11.044","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:29.979","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:43.674","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:01.409","source":"Server","level":"WARN","message":"⚠ Slow filesystem detected. The benchmark took 325ms. If /home/ethereal/Documents/portfolio/cyber-portfolio/dist/dev is a network drive, consider moving it to a local folder.\nSee more: https://nextjs.org/docs/app/guides/local-development"}
+{"timestamp":"00:00:01.664","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:09.176","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:17.436","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
