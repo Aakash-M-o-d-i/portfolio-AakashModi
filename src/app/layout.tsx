@@ -16,6 +16,11 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "AAKASH MODI Portfolio",
   description: "A high-fidelity technical portfolio for developers and security researchers.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
