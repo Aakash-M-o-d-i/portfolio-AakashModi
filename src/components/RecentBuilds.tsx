@@ -10,9 +10,9 @@ export const RecentBuilds = () => {
           <div className="w-full md:w-[40%] relative border border-outline-variant overflow-hidden bg-surface-container group">
             <div className="absolute top-4 left-4 z-10 bg-primary-fixed text-on-primary-fixed px-2 py-0.5 text-label-caps font-bold">OP_01</div>
             <div className="w-full h-[250px] overflow-hidden">
-              <img 
-                src="media__1778843815271.png" 
-                alt="Knowledge Hub Screenshot" 
+              <img
+                src="media__1778843815271.png"
+                alt="Knowledge Hub Screenshot"
                 className="w-full h-full object-cover cyber-image-effect transition-transform duration-700 hover:scale-105"
               />
             </div>
@@ -38,9 +38,9 @@ export const RecentBuilds = () => {
           <div className="w-full md:w-[40%] relative border border-outline-variant overflow-hidden bg-surface-container">
             <div className="absolute top-4 right-4 z-10 bg-secondary-container text-on-secondary-container px-2 py-0.5 text-label-caps font-bold">OP_02</div>
             <div className="w-full h-[250px] overflow-hidden">
-              <img 
-                src="/tekin-screenshot.png" 
-                alt="Industrial eCommerce Screenshot" 
+              <img
+                src="/tekin-screenshot.png"
+                alt="Industrial eCommerce Screenshot"
                 className="w-full h-full object-cover cyber-image-effect transition-transform duration-700 hover:scale-105"
               />
             </div>
@@ -57,6 +57,34 @@ export const RecentBuilds = () => {
             </p>
             <div className="flex gap-4 mt-auto">
               <a className="text-label-caps text-on-surface-variant hover:text-primary-fixed hover:border-b hover:border-primary-fixed transition-all" href="https://github.com/Aakash-M-o-d-i/hardware_tools_ECommerce" target="_blank" rel="noopener noreferrer">[GITHUB_REPO]</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 03: SIKKIM_MOBILE_STORE */}
+        <div className="border border-outline-variant bg-surface-container-lowest p-6 flex flex-col md:flex-row gap-8 group">
+          <div className="w-full md:w-[40%] relative border border-outline-variant overflow-hidden bg-surface-container group">
+            <div className="absolute top-4 left-4 z-10 bg-primary-fixed text-on-primary-fixed px-2 py-0.5 text-label-caps font-bold">OP_03</div>
+            <div className="w-full h-[250px] overflow-hidden">
+              <img
+                src="/media__1780331783792.png"
+                alt="Sikkim Mobile Store Screenshot"
+                className="w-full h-full object-cover cyber-image-effect transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-[60%] flex flex-col">
+            <h3 className="text-headline-md mb-2 uppercase tracking-wider">SIKKIM_MOBILE_STORE</h3>
+            <div className="flex flex-wrap gap-2 mb-6">
+              {["REACT.JS", "TAILWIND CSS", "NETLIFY", "APPOINTMENT_SYSTEM"].map((tag) => (
+                <span key={tag} className="border border-outline-variant px-2 py-1 text-[10px] font-bold text-on-surface-variant">{tag}</span>
+              ))}
+            </div>
+            <p className="text-code-sm text-on-surface-variant mb-8 leading-relaxed max-w-xl">
+              A premium client website built to drive customer acquisition and online presence. Users can easily book device repair appointments online, schedule services, and browse/purchase mobile devices and accessories through a sleek, highly interactive interface.
+            </p>
+            <div className="flex gap-4 mt-auto">
+              <a className="text-label-caps text-primary-fixed hover:border-b hover:border-primary-fixed transition-all" href="https://sikkimmobilestore.netlify.app/" target="_blank" rel="noopener noreferrer">[LIVE_DEMO]</a>
             </div>
           </div>
         </div>

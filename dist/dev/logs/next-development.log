@@ -1,4 +1,6 @@
-{"timestamp":"00:00:01.409","source":"Server","level":"WARN","message":"⚠ Slow filesystem detected. The benchmark took 325ms. If /home/ethereal/Documents/portfolio/cyber-portfolio/dist/dev is a network drive, consider moving it to a local folder.\nSee more: https://nextjs.org/docs/app/guides/local-development"}
-{"timestamp":"00:00:01.664","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:09.176","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:17.436","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:20.349","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:26.625","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:05:41.798","source":"Server","level":"LOG","message":"✓ Compiled in 11.4s"}
+{"timestamp":"00:10:13.911","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:10:23.587","source":"Server","level":"LOG","message":"✓ Compiled in 3.1s"}
+{"timestamp":"00:11:11.355","source":"Server","level":"LOG","message":"✓ Compiled in 257ms"}
