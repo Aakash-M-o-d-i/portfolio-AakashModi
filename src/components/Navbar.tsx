@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 
-export const Navbar = () => {
+interface NavbarProps {
+  theme?: "dark" | "light";
+  toggleTheme?: () => void;
+}
+
+export const Navbar = ({ theme = "dark", toggleTheme }: NavbarProps) => {
   const [showCV, setShowCV] = useState(false);
 
   return (
@@ -15,12 +20,25 @@ export const Navbar = () => {
           <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#reports">ARCHIVE</a>
           <a className="text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary-fixed hover:bg-primary-container hover:text-on-primary-container transition-colors duration-75 cursor-crosshair active:invert" href="#connect">CONNECT</a>
         </div>
-        <button 
-          onClick={() => setShowCV(true)}
-          className="text-body-md uppercase tracking-widest text-primary-fixed border border-primary-fixed px-4 py-1 hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors duration-75 cursor-crosshair"
-        >
-          DECRYPT_CV
-        </button>
+        <div className="flex items-center gap-3">
+          {toggleTheme && (
+            <button
+              onClick={toggleTheme}
+              className="text-primary-fixed border border-primary-fixed p-1.5 hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors duration-75 cursor-crosshair flex items-center justify-center"
+              title="TOGGLE_THEME"
+            >
+              <span className="material-symbols-outlined text-[20px]">
+                {theme === "dark" ? "light_mode" : "dark_mode"}
+              </span>
+            </button>
+          )}
+          <button 
+            onClick={() => setShowCV(true)}
+            className="text-body-md uppercase tracking-widest text-primary-fixed border border-primary-fixed px-4 py-1 hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors duration-75 cursor-crosshair"
+          >
+            DECRYPT_CV
+          </button>
+        </div>
       </nav>
 
       {/* CV Modal Popup */}

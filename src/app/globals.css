@@ -1,53 +1,161 @@
 @import "tailwindcss";
 
+:root {
+  --surface: #131313;
+  --surface-dim: #131313;
+  --surface-bright: #3a3939;
+  --surface-container-lowest: #0e0e0e;
+  --surface-container-low: #1c1b1b;
+  --surface-container: #201f1f;
+  --surface-container-high: #2a2a2a;
+  --surface-container-highest: #353534;
+  --on-surface: #e5e2e1;
+  --on-surface-variant: #c7c9ab;
+  --inverse-surface: #e5e2e1;
+  --inverse-on-surface: #313030;
+  --outline: #919378;
+  --outline-variant: #464832;
+  --surface-tint: #bed100;
+  --primary: #ffffff;
+  --on-primary: #2e3300;
+  --primary-container: #d9ef00;
+  --on-primary-container: #606a00;
+  --inverse-primary: #5a6400;
+  --secondary: #ecffe3;
+  --on-secondary: #003907;
+  --secondary-container: #13ff43;
+  --on-secondary-container: #007117;
+  --tertiary: #ffffff;
+  --on-tertiary: #680008;
+  --tertiary-container: #ffdad6;
+  --on-tertiary-container: #ca081c;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --on-error-container: #ffdad6;
+  --primary-fixed: #d9ef00;
+  --primary-fixed-dim: #bed100;
+  --on-primary-fixed: #1a1e00;
+  --on-primary-fixed-variant: #434b00;
+  --secondary-fixed: #72ff70;
+  --secondary-fixed-dim: #00e639;
+  --on-secondary-fixed: #002203;
+  --on-secondary-fixed-variant: #00530e;
+  --tertiary-fixed: #ffdad6;
+  --tertiary-fixed-dim: #ffb3ac;
+  --on-tertiary-fixed: #410003;
+  --on-tertiary-fixed-variant: #930010;
+  --background: #131313;
+  --on-background: #e5e2e1;
+  --surface-variant: #353534;
+}
+
+.light {
+  --surface: #ffffff;
+  --surface-dim: #dadada;
+  --surface-bright: #ffffff;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f4f4f6;
+  --surface-container: #eeeeee;
+  --surface-container-high: #e8e8e8;
+  --surface-container-highest: #e2e2e2;
+  --on-surface: #0A0A0A; /* Neutral Black */
+  --on-surface-variant: #2d2d2d;
+  --inverse-surface: #303030;
+  --inverse-on-surface: #f1f1f1;
+  --outline: #0A0A0A; /* Neutral Black borders */
+  --outline-variant: #0A0A0A; /* Thick brutalist outlines */
+  --surface-tint: #E8FF00;
+  
+  --primary: #0A0A0A; /* Primary interactive components are Neutral Black */
+  --on-primary: #ffffff;
+  --primary-container: #E8FF00; /* Solid Electric Yellow from palette image! */
+  --on-primary-container: #0A0A0A;
+  --inverse-primary: #bed100;
+  
+  --secondary: #00FF41; /* Cyber Green from palette image */
+  --on-secondary: #0A0A0A;
+  --secondary-container: #00FF41; /* Solid Cyber Green blocks! */
+  --on-secondary-container: #0A0A0A;
+  
+  --tertiary: #FF3B3B; /* Hot Red from palette image */
+  --on-tertiary: #ffffff;
+  --tertiary-container: #FF3B3B; /* Solid Hot Red blocks! */
+  --on-tertiary-container: #ffffff;
+  
+  --error: #FF3B3B;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #FF3B3B;
+  
+  --primary-fixed: #E8FF00; /* Electric Yellow highlights */
+  --primary-fixed-dim: #bed100;
+  --on-primary-fixed: #0A0A0A;
+  --on-primary-fixed-variant: #0A0A0A;
+  
+  --secondary-fixed: #00FF41; /* Cyber Green highlights */
+  --secondary-fixed-dim: #00e639;
+  --on-secondary-fixed: #0A0A0A;
+  --on-secondary-fixed-variant: #0A0A0A;
+  
+  --tertiary-fixed: #FF3B3B; /* Hot Red highlights */
+  --tertiary-fixed-dim: #ca081c;
+  --on-tertiary-fixed: #ffffff;
+  --on-tertiary-fixed-variant: #ffffff;
+  
+  --background: #F4F4F6; /* Sleek cool off-white background */
+  --on-background: #0A0A0A;
+  --surface-variant: #e2e2e2;
+}
+
 @theme {
-  --color-surface: #131313;
-  --color-surface-dim: #131313;
-  --color-surface-bright: #3a3939;
-  --color-surface-container-lowest: #0e0e0e;
-  --color-surface-container-low: #1c1b1b;
-  --color-surface-container: #201f1f;
-  --color-surface-container-high: #2a2a2a;
-  --color-surface-container-highest: #353534;
-  --color-on-surface: #e5e2e1;
-  --color-on-surface-variant: #c7c9ab;
-  --color-inverse-surface: #e5e2e1;
-  --color-inverse-on-surface: #313030;
-  --color-outline: #919378;
-  --color-outline-variant: #464832;
-  --color-surface-tint: #bed100;
-  --color-primary: #ffffff;
-  --color-on-primary: #2e3300;
-  --color-primary-container: #d9ef00;
-  --color-on-primary-container: #606a00;
-  --color-inverse-primary: #5a6400;
-  --color-secondary: #ecffe3;
-  --color-on-secondary: #003907;
-  --color-secondary-container: #13ff43;
-  --color-on-secondary-container: #007117;
-  --color-tertiary: #ffffff;
-  --color-on-tertiary: #680008;
-  --color-tertiary-container: #ffdad6;
-  --color-on-tertiary-container: #ca081c;
-  --color-error: #ffb4ab;
-  --color-on-error: #690005;
-  --color-error-container: #93000a;
-  --color-on-error-container: #ffdad6;
-  --color-primary-fixed: #d9ef00;
-  --color-primary-fixed-dim: #bed100;
-  --color-on-primary-fixed: #1a1e00;
-  --color-on-primary-fixed-variant: #434b00;
-  --color-secondary-fixed: #72ff70;
-  --color-secondary-fixed-dim: #00e639;
-  --color-on-secondary-fixed: #002203;
-  --color-on-secondary-fixed-variant: #00530e;
-  --color-tertiary-fixed: #ffdad6;
-  --color-tertiary-fixed-dim: #ffb3ac;
-  --color-on-tertiary-fixed: #410003;
-  --color-on-tertiary-fixed-variant: #930010;
-  --color-background: #131313;
-  --color-on-background: #e5e2e1;
-  --color-surface-variant: #353534;
+  --color-surface: var(--surface);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-bright: var(--surface-bright);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-inverse-on-surface: var(--inverse-on-surface);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  --color-surface-tint: var(--surface-tint);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-inverse-primary: var(--inverse-primary);
+  --color-secondary: var(--secondary);
+  --color-on-secondary: var(--on-secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-tertiary: var(--tertiary);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-tertiary-container: var(--tertiary-container);
+  --color-on-tertiary-container: var(--on-tertiary-container);
+  --color-error: var(--error);
+  --color-on-error: var(--on-error);
+  --color-error-container: var(--error-container);
+  --color-on-error-container: var(--on-error-container);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-on-primary-fixed: var(--on-primary-fixed);
+  --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-secondary-fixed-dim: var(--secondary-fixed-dim);
+  --color-on-secondary-fixed: var(--on-secondary-fixed);
+  --color-on-secondary-fixed-variant: var(--on-secondary-fixed-variant);
+  --color-tertiary-fixed: var(--tertiary-fixed);
+  --color-tertiary-fixed-dim: var(--tertiary-fixed-dim);
+  --color-on-tertiary-fixed: var(--on-tertiary-fixed);
+  --color-on-tertiary-fixed-variant: var(--on-tertiary-fixed-variant);
+  --color-background: var(--background);
+  --color-on-background: var(--on-background);
+  --color-surface-variant: var(--surface-variant);
 
   --font-bebas: "var(--font-bebas)";
   --font-jetbrains: "var(--font-jetbrains)";
@@ -149,3 +257,65 @@
 .cyber-image-effect {
   animation: cyber-pulse 8s infinite ease-in-out;
 }
+
+/* Light mode specific styling overrides */
+.light .grain-overlay {
+  opacity: 0.02;
+}
+
+/* Make highlighted heading text into a premium marker highlight block in light mode */
+.light .text-primary-fixed {
+  color: #0A0A0A !important;
+  background-color: #E8FF00;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px solid #0A0A0A;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+/* Ensure the navbar logo remains clean text rather than a yellow block */
+.light nav .text-primary-fixed {
+  color: #0A0A0A !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  display: inline !important;
+}
+
+/* Ensure the footer logo remains clean text */
+.light footer .text-primary-fixed {
+  color: #0A0A0A !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  display: inline !important;
+}
+
+/* Make the Decrypt CV button border high-contrast */
+.light button.text-primary-fixed {
+  color: #0A0A0A !important;
+  background-color: transparent !important;
+  border: 1px solid #0A0A0A !important;
+  padding: 4px 16px !important;
+  transform: none !important;
+  display: inline-block !important;
+}
+.light button.text-primary-fixed:hover {
+  background-color: #E8FF00 !important;
+}
+
+/* Align progress bar fills to use Cyber Green and Hot Red */
+.light .bg-primary-fixed {
+  background-color: #E8FF00 !important;
+}
+.light .bg-secondary-container {
+  background-color: #00FF41 !important;
+}
+
